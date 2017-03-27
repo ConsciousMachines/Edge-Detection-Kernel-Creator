@@ -75,11 +75,11 @@ colors = np.transpose(np.array([red,green,blue,np.tile(255,1536)]))
 #colors2 = np.asarray(np.reshape(colors,[48,32,4]),dtype='uint8')
 #im.fromarray(colors2).show()   
 
-base = "/Users/sevladchenko/Desktop/yolo3.jpg"
+base = '' # directory to your image
 base = im.open(base)
 base = np.asarray(base)
 
-dir1 = '/Users/sevladchenko/Desktop/grafu/'
+dir1 = '' # directory to your folder to save graph output
 
 # K E R N E L S
 gaus = [0,1,0,2,4,2,0,1,0] # Gaussian
@@ -459,26 +459,6 @@ def kernel_guesser(base):
 
 
 kernel_guesser(base)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
